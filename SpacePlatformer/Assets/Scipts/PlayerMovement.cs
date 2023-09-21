@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator Anim;
     private bool grounded;
     private GameManager gameManager;
+    public float maxAirTime = 30f; 
+    private float currentAirTime = 0f;
 
     private void Start()
     {
@@ -37,12 +39,17 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) && grounded)
             Jump();
 
-        //set animator Parameters
+        if (!grounded) 
+        {
+            currentAirTime += Time.deltaTime;
+        }
+
         Anim.SetBool("Walk",horizontalInput != 0);
         Anim.SetBool("grounded",grounded);
          
     }
 
+    
     private void Jump(){
         body.velocity = new Vector3(body.velocity.x, Jump_speed);
         grounded = false;
