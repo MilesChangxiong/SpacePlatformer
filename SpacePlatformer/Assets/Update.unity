@@ -528,6 +528,10 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   maxVerticalSpeedForJump: 7
+  fadeSpeed: 2
+  maxChaseDistance: 10
+  avoidDistance: 100
+  avoidForce: 20
 --- !u!50 &194536423
 Rigidbody2D:
   serializedVersion: 4
@@ -544,7 +548,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 349529d8dfeaaeb47b2f86f35ae3dacf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1086,7 +1090,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 349529d8dfeaaeb47b2f86f35ae3dacf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1199,6 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   Jump_speed: 20
+  maxAirTime: 30
 --- !u!95 &476823835
 Animator:
   serializedVersion: 5
@@ -1328,6 +1333,10 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   maxVerticalSpeedForJump: 7
+  fadeSpeed: 2
+  maxChaseDistance: 10
+  avoidDistance: 100
+  avoidForce: 20
 --- !u!50 &543773520
 Rigidbody2D:
   serializedVersion: 4
@@ -1344,7 +1353,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 349529d8dfeaaeb47b2f86f35ae3dacf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -2232,6 +2241,10 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   maxVerticalSpeedForJump: 7
+  fadeSpeed: 2
+  maxChaseDistance: 10
+  avoidDistance: 100
+  avoidForce: 20
 --- !u!50 &876868388
 Rigidbody2D:
   serializedVersion: 4
@@ -2248,7 +2261,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 349529d8dfeaaeb47b2f86f35ae3dacf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -3348,6 +3361,10 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   maxVerticalSpeedForJump: 7
+  fadeSpeed: 2
+  maxChaseDistance: 10
+  avoidDistance: 100
+  avoidForce: 20
 --- !u!50 &1434396643
 Rigidbody2D:
   serializedVersion: 4
@@ -3364,7 +3381,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 349529d8dfeaaeb47b2f86f35ae3dacf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -3490,7 +3507,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 349529d8dfeaaeb47b2f86f35ae3dacf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -3593,6 +3610,10 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   maxVerticalSpeedForJump: 7
+  fadeSpeed: 2
+  maxChaseDistance: 10
+  avoidDistance: 100
+  avoidForce: 20
 --- !u!70 &1509182110
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3660,6 +3681,10 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   maxVerticalSpeedForJump: 7
+  fadeSpeed: 2
+  maxChaseDistance: 10
+  avoidDistance: 100
+  avoidForce: 20
 --- !u!50 &1516452909
 Rigidbody2D:
   serializedVersion: 4
@@ -3676,7 +3701,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 349529d8dfeaaeb47b2f86f35ae3dacf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -4553,6 +4578,10 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   maxVerticalSpeedForJump: 7
+  fadeSpeed: 2
+  maxChaseDistance: 10
+  avoidDistance: 100
+  avoidForce: 20
 --- !u!50 &1663609097
 Rigidbody2D:
   serializedVersion: 4
@@ -4569,7 +4598,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 349529d8dfeaaeb47b2f86f35ae3dacf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
