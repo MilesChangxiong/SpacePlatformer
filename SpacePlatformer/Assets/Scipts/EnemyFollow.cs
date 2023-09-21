@@ -28,7 +28,7 @@ public class EnemyFollow : MonoBehaviour
         }
         else
         {
-            //rb.velocity = Vector2.zero; // ֹͣ���˵����ж���
+            //rb.velocity = Vector2.zero; 
         }
     }
 

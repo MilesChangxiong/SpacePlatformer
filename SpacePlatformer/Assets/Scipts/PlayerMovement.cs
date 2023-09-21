@@ -9,9 +9,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D body;
     private Animator Anim;
     private bool grounded;
+    private GameManager gameManager;
 
-    
-    
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
+
     private void Awake()
     {
         //reference to rigidbody and animator from object
@@ -50,4 +54,21 @@ public class PlayerMovement : MonoBehaviour
             grounded = true;
         }
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            
+            gameManager.OnPlayerDefeated();
+            //Time.timeScale = 0;
+        }
+        else if (collision.CompareTag("Destination"))
+        {
+            gameManager.OnPlayerWin();
+            //Time.timeScale = 0;
+        }
+    }
+
 }
