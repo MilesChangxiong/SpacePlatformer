@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float Jump_speed;
-    [SerializeField] private float flyForce = 3.5f;
+    [SerializeField] private float speed = 20.0f;
+    [SerializeField] private float Jump_speed = 20.0f;
+    [SerializeField] private float flyForce = 20.0f;
     private Rigidbody2D body;
     private Animator Anim;
     private bool grounded;
     private GameManager gameManager;
-    public float maxAirTime = 10.0f; 
-    public float currentAirTime = 0.0f;
+    private float maxAirTime = 10.0f;
+    private float currentAirTime = 0.0f;
+
 
     private void Start()
     {
